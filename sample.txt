@@ -1,0 +1,764 @@
+You are a senior product designer, creative developer, and frontend architect.
+
+I want you to build a **world-class personal portfolio website for me** based on the resume/CV I have provided in this project/workspace.
+
+The goal is NOT to make a normal developer portfolio.
+
+I want a portfolio that feels like a **premium interactive digital experience** — something recruiters, clients, and other developers see and immediately think:
+
+> “This is insanely good.”
+
+It should feel unique, memorable, polished, technically impressive, and highly intentional.
+
+## 1. FIRST — ANALYZE MY RESUME
+
+Before writing the UI:
+
+1. Find and read my attached resume/CV.
+2. Extract:
+
+   * Full name
+   * Professional title
+   * About/summary
+   * Work experience
+   * Companies
+   * Roles
+   * Dates
+   * Responsibilities
+   * Achievements
+   * Projects
+   * Technologies
+   * Education
+   * Certifications
+   * Awards
+   * Links
+   * Contact information
+3. Treat my resume as the **source of truth**.
+4. DO NOT invent companies, projects, technologies, achievements, job titles, metrics, or experience.
+5. If some information is missing, design around what is available rather than creating fake information.
+
+Create a clean data structure so the portfolio content can easily be updated later.
+
+---
+
+# 2. TECH STACK — STRICT
+
+Use:
+
+* React.js
+* TypeScript
+* Recoil for application state management
+* Vite
+* Modern CSS / Tailwind CSS if appropriate
+* Framer Motion for animations
+* Lucide React or another clean icon library
+* React Router if multiple routes are useful
+
+Use strong TypeScript typing throughout.
+
+Do NOT convert this into Next.js.
+
+Do NOT use JavaScript where TypeScript can be used.
+
+Do NOT introduce unnecessary libraries.
+
+Architecture should be clean and production-ready.
+
+---
+
+# 3. DESIGN DIRECTION
+
+Do NOT create a generic:
+
+“Hi, I'm Alok, I'm a developer.”
+
+portfolio.
+
+Avoid the typical portfolio look:
+
+* Generic gradient hero
+* Huge centered heading
+* Random blobs
+* Basic cards
+* Generic navbar
+* Template-looking sections
+* Excessive glassmorphism
+* Overused purple/blue gradients
+* Stock illustrations
+* Fake statistics
+* Unnecessary skill percentage bars
+
+Instead, create a **signature visual identity**.
+
+Think:
+
+**Apple-level polish + Awwwards-style interaction + modern developer tooling + cinematic storytelling.**
+
+The website should feel like an interactive product rather than a resume converted into HTML.
+
+---
+
+# 4. HERO SECTION
+
+Create a highly memorable hero.
+
+The hero should immediately communicate:
+
+* Who I am
+* What I do
+* My primary technology/domain
+* My personality as a developer
+
+Use large typography with excellent visual hierarchy.
+
+Consider an interactive visual system such as:
+
+* Interactive developer terminal
+* Dynamic code visualization
+* 3D-inspired UI
+* Interactive command palette
+* Cursor-reactive elements
+* Animated code snippets
+* Developer workspace visualization
+* Interactive system architecture
+* Dynamic background responding subtly to pointer movement
+
+But keep it tasteful.
+
+The hero must remain fast and readable.
+
+Include strong CTAs such as:
+
+* View Work
+* Explore Experience
+* Download Resume
+* Contact Me
+
+Only include CTAs that make sense based on my resume.
+
+---
+
+# 5. MAKE THE PORTFOLIO STORY-DRIVEN
+
+The website should tell my career story instead of simply displaying sections.
+
+Possible flow:
+
+HERO
+↓
+WHO I AM
+↓
+WHAT I BUILD
+↓
+SELECTED WORK
+↓
+EXPERIENCE TIMELINE
+↓
+TECH STACK
+↓
+ENGINEERING APPROACH
+↓
+ACHIEVEMENTS
+↓
+CONTACT
+
+You can change this structure if you discover a significantly better experience from my resume.
+
+---
+
+# 6. ABOUT SECTION
+
+Do not simply copy my resume summary.
+
+Transform my actual information into a concise, compelling narrative.
+
+Make it feel human and confident.
+
+Include subtle interactive details.
+
+For example:
+
+* Years/experience if available
+* Areas I specialize in
+* What problems I enjoy solving
+* Engineering philosophy
+* Technologies I work with
+
+Again: derive facts from my resume.
+
+---
+
+# 7. EXPERIENCE
+
+Turn my work experience into an **interactive career timeline**.
+
+Each company/role should feel like a chapter.
+
+Include:
+
+* Company
+* Role
+* Duration
+* Key responsibilities
+* Major achievements
+* Technologies used
+
+Add smooth scroll/reveal animations.
+
+Possible interaction:
+
+As the user scrolls, the timeline progresses and the current role becomes highlighted.
+
+Make this section visually impressive without sacrificing readability.
+
+---
+
+# 8. PROJECTS / WORK
+
+This should be one of the strongest parts of the website.
+
+Do NOT make basic rectangular project cards.
+
+Create large editorial/project showcases.
+
+Each project should communicate:
+
+* Project name
+* What problem it solved
+* My role
+* Technologies
+* Important technical details
+* Outcome/impact if available
+* GitHub/live link if present in my resume
+
+Consider interactions such as:
+
+* Project cards expanding into detailed views
+* Horizontal scrolling showcase
+* Hover-driven previews
+* Animated browser mockups
+* Code snippets
+* Architecture visualization
+* Before/after interaction
+* Project detail modal/page
+
+Do not fabricate screenshots or project details.
+
+If there are no project screenshots, create beautiful UI representations based on the actual project information.
+
+---
+
+# 9. TECH STACK
+
+Do NOT use boring progress bars like:
+
+React — 90%
+TypeScript — 85%
+
+Instead, create an interactive technology ecosystem.
+
+Group technologies logically:
+
+Frontend
+Backend
+Cloud
+Database
+DevOps
+Tools
+etc.
+
+Only use technologies actually present in my resume.
+
+Create subtle hover interactions.
+
+For example:
+
+Hovering a technology can reveal:
+
+* How I used it
+* Relevant project/company
+* Related technologies
+
+This information should come from my resume.
+
+---
+
+# 10. INTERACTIVE DEVELOPER EXPERIENCE
+
+I want at least one memorable interactive feature.
+
+Create something like a mini developer terminal.
+
+Example:
+
+$ whoami
+
+> [my professional identity]
+
+$ skills
+
+> React
+> TypeScript
+> ...
+
+$ experience
+
+> ...
+
+$ projects
+
+> ...
+
+$ contact
+
+> ...
+
+The commands should actually work.
+
+Use Recoil to manage the terminal/application state where appropriate.
+
+Make this feature optional/non-blocking so it doesn't interfere with normal navigation.
+
+---
+
+# 11. RECOIL ARCHITECTURE
+
+Use Recoil meaningfully.
+
+Create appropriate atoms/selectors for things such as:
+
+* Active navigation section
+* Theme
+* Selected project
+* Terminal state
+* UI interaction state
+* Modal state
+* Animation preferences
+
+Do not add Recoil just for the sake of saying Recoil is used.
+
+Keep state architecture clean.
+
+Example structure:
+
+src/
+components/
+sections/
+pages/
+hooks/
+state/
+data/
+types/
+utils/
+assets/
+
+Keep content/data separated from UI.
+
+---
+
+# 12. ANIMATIONS
+
+Animations should feel premium.
+
+Use Framer Motion for:
+
+* Page entrance
+* Section reveals
+* Text transitions
+* Project interactions
+* Timeline progression
+* Navigation transitions
+* Modal transitions
+* Hover interactions
+* Micro-interactions
+
+Consider:
+
+* Staggered reveals
+* Scroll-linked animations
+* Magnetic buttons
+* Smooth cursor interactions
+* Text splitting
+* Shared layout animations
+
+BUT:
+
+Do not over-animate everything.
+
+Animations should support the story.
+
+Respect:
+
+`prefers-reduced-motion`
+
+and provide reduced-motion behavior.
+
+---
+
+# 13. NAVIGATION
+
+Create a premium minimal navigation.
+
+Possible structure:
+
+[Logo/Name]   Work   Experience   About   Stack   Contact   [Resume]
+
+Make navigation:
+
+* Sticky
+* Responsive
+* Smooth scrolling
+* Active-section aware
+* Keyboard accessible
+
+On mobile, create a beautiful mobile navigation rather than simply shrinking desktop navigation.
+
+---
+
+# 14. DARK / LIGHT MODE
+
+Implement a polished theme system.
+
+Default to the visually stronger theme based on the overall design.
+
+Add a theme toggle.
+
+Persist the preference.
+
+Use Recoil for the relevant UI state.
+
+Ensure both themes look intentionally designed rather than simply inverted.
+
+---
+
+# 15. CUSTOM CURSOR / INTERACTION
+
+If appropriate, create a custom cursor experience for desktop.
+
+Examples:
+
+* Cursor grows over interactive elements
+* Cursor changes based on interaction
+* Project previews react to cursor movement
+
+Do NOT enable this on touch devices.
+
+Keep it subtle and performant.
+
+---
+
+# 16. CONTACT SECTION
+
+Create a strong final CTA.
+
+Instead of simply:
+
+“Contact me.”
+
+Create something memorable.
+
+For example:
+
+“Have an interesting problem?
+Let's build it.”
+
+Then provide the actual contact/social links available in my resume.
+
+Include:
+
+* Email
+* LinkedIn
+* GitHub
+* Other relevant links
+
+Do not invent links.
+
+Add a polished copy-to-clipboard interaction for email if an email exists.
+
+---
+
+# 17. FOOTER
+
+Minimal but memorable.
+
+Include:
+
+* Name
+* Role
+* Social links
+* Copyright
+* Small interactive detail
+
+Example concept:
+
+“Designed & engineered with React + TypeScript.”
+
+Only mention technologies actually used in this website.
+
+---
+
+# 18. RESPONSIVENESS
+
+The website must be excellent on:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+
+Do not treat mobile as an afterthought.
+
+Test layouts around:
+
+* 320px
+* 375px
+* 414px
+* 768px
+* 1024px
+* 1440px+
+
+Avoid:
+
+* Horizontal overflow
+* Broken animations
+* Tiny text
+* Unreachable buttons
+* Layout jumps
+
+---
+
+# 19. ACCESSIBILITY
+
+Implement proper:
+
+* Semantic HTML
+* Keyboard navigation
+* Focus states
+* ARIA labels where necessary
+* Color contrast
+* Reduced-motion support
+* Screen-reader friendly interactive elements
+
+Do not sacrifice accessibility for visual effects.
+
+---
+
+# 20. PERFORMANCE
+
+The site should feel extremely fast.
+
+Optimize:
+
+* Images
+* Fonts
+* Animations
+* Component rendering
+* Lazy loading
+* Bundle size
+
+Avoid unnecessary re-renders.
+
+Use React best practices.
+
+Do not add huge libraries just for one tiny animation.
+
+---
+
+# 21. SEO
+
+Add:
+
+* Proper title
+* Meta description
+* Open Graph metadata
+* Semantic headings
+* Favicon
+* Structured metadata if appropriate
+
+Use my actual professional information.
+
+Do not fabricate SEO claims.
+
+---
+
+# 22. VISUAL DETAILS
+
+Pay extreme attention to:
+
+* Typography
+* Spacing
+* Grid
+* Alignment
+* Border radius
+* Shadows
+* Motion
+* Hover states
+* Scroll behavior
+* Section transitions
+* Empty space
+* Mobile behavior
+
+Every pixel should feel intentional.
+
+The site should look like it was designed by a top-tier product designer, not generated from a template.
+
+---
+
+# 23. IMPORTANT — NO FAKE CONTENT
+
+This is extremely important.
+
+Never invent:
+
+* Employers
+* Job titles
+* Years of experience
+* Projects
+* Clients
+* Revenue
+* User counts
+* Awards
+* Certifications
+* Technologies
+* Testimonials
+* Metrics
+
+If my resume says something, use it.
+
+If my resume does not say something, don't pretend it happened.
+
+---
+
+# 24. CODE QUALITY
+
+Write production-quality code.
+
+Requirements:
+
+* Strict TypeScript
+* Reusable components
+* Proper interfaces/types
+* Clean state management
+* No giant monolithic component
+* No duplicated UI
+* No unnecessary abstractions
+* Meaningful component names
+* Meaningful variable names
+* No `any` unless absolutely unavoidable
+* No console errors
+* No broken imports
+* No dead code
+
+---
+
+# 25. FINAL QUALITY BAR
+
+Before considering the work complete, inspect the entire application as if you were:
+
+1. A senior frontend engineer
+2. A product designer
+3. A recruiter
+4. A potential client
+
+Ask:
+
+“Would this portfolio make this developer stand out among 100 other React developers?”
+
+If the answer is no, improve it.
+
+Do not stop at a functional MVP.
+
+Keep iterating on the visual design and interactions until it feels genuinely exceptional.
+
+---
+
+# 26. IMPLEMENTATION PROCESS
+
+Follow this process:
+
+STEP 1:
+Inspect the resume and existing project files.
+
+STEP 2:
+Understand my professional identity and identify the strongest stories from my career.
+
+STEP 3:
+Create the information architecture and visual concept.
+
+STEP 4:
+Set up the React + TypeScript architecture.
+
+STEP 5:
+Implement Recoil state management.
+
+STEP 6:
+Build the design system.
+
+STEP 7:
+Build the hero.
+
+STEP 8:
+Build experience and projects.
+
+STEP 9:
+Build interactive developer experience.
+
+STEP 10:
+Build remaining sections.
+
+STEP 11:
+Implement responsive behavior.
+
+STEP 12:
+Implement animations and micro-interactions.
+
+STEP 13:
+Implement accessibility and performance optimizations.
+
+STEP 14:
+Run the project.
+
+STEP 15:
+Fix ALL TypeScript, ESLint, build and runtime errors.
+
+STEP 16:
+Review every page/section visually.
+
+STEP 17:
+Improve anything that looks generic, unfinished, repetitive, or template-like.
+
+STEP 18:
+Give me a concise summary of:
+
+* What you built
+* Main design concept
+* Important components
+* Recoil architecture
+* How to run it
+* Any information/assets you still need from me
+
+---
+
+## MOST IMPORTANT CREATIVE DIRECTION
+
+Don't build me a portfolio website.
+
+Build me a **digital representation of who I am as an engineer.**
+
+Someone should be able to spend 30 seconds on the website and understand:
+
+**WHO I AM → WHAT I BUILD → HOW I THINK → WHAT I'VE ACHIEVED → WHY THEY SHOULD WORK WITH ME.**
+
+Make it technically impressive.
+
+Make it visually impressive.
+
+Make it interactive.
+
+Make it memorable.
+
+Make it feel custom-built specifically for me.
+
+**I want the final result to make people say:**
+
+> “Damn. This is a portfolio?”
