@@ -34,8 +34,8 @@ export const projects: ProjectItem[] = [
     links: [
       {
         label: 'Download APK',
-        href: '/apk/convertX.apk',
-        download: 'convertX.apk',
+        href: 'https://drive.google.com/drive/folders/1z-lBszP0Pdrk-eFBfoJQRfedRHhnLfvx?usp=sharing',
+        external: true,
       },
     ],
   },
