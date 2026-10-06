@@ -16,10 +16,18 @@ export const technologies: TechItem[] = [
     related: ['TypeScript', 'Vite', 'Tailwind CSS'],
   },
   {
+    name: 'Expo / React Native',
+    group: 'Frontend',
+    usage:
+      'ConvertX — privacy-first offline file toolkit with Expo Router, NativeWind, on-device pipelines, and EAS builds.',
+    related: ['TypeScript', 'Zustand / Jotai', 'Tailwind CSS'],
+  },
+  {
     name: 'TypeScript',
     group: 'Frontend',
-    usage: 'Typed product codebases for Hobu, MedyxHealth, Elevora, and Four Corners.',
-    related: ['React.js', 'Vite'],
+    usage:
+      'Typed product codebases for Hobu, MedyxHealth, Elevora, ConvertX, and Four Corners.',
+    related: ['React.js', 'Expo / React Native', 'Vite'],
   },
   {
     name: 'JavaScript',
@@ -48,8 +56,9 @@ export const technologies: TechItem[] = [
   {
     name: 'Zustand / Jotai',
     group: 'Frontend',
-    usage: 'Zustand on Hobu; Jotai on Elevora for lightweight client state.',
-    related: ['React.js', 'Recoil'],
+    usage:
+      'Zustand on Hobu and ConvertX (with AsyncStorage persistence); Jotai on Elevora.',
+    related: ['React.js', 'Expo / React Native', 'Recoil'],
   },
   {
     name: 'Recoil',

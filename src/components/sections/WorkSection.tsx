@@ -1,10 +1,11 @@
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
-import { ArrowUpRight, X } from 'lucide-react';
+import { ArrowUpRight, Download, X } from 'lucide-react';
 import { useMemo } from 'react';
 import { useRecoilState } from 'recoil';
 import { projects } from '../../data/projects';
 import { selectedProjectIdState } from '../../state/atoms';
 import type { ProjectItem } from '../../types';
+import { MagneticButton } from '../ui/MagneticButton';
 import { SectionHeading } from '../ui/SectionHeading';
 
 function ProjectVisual({ project }: { project: ProjectItem }) {
@@ -236,6 +237,26 @@ export function WorkSection() {
                   </span>
                 ))}
               </div>
+
+              {selected.links?.length ? (
+                <div className="mt-8 flex flex-wrap gap-3">
+                  {selected.links.map((link) => (
+                    <MagneticButton
+                      key={link.href}
+                      href={link.href}
+                      external={link.download ? false : (link.external ?? true)}
+                      download={link.download}
+                    >
+                      {link.label}
+                      {link.download ? (
+                        <Download size={14} />
+                      ) : (
+                        <ArrowUpRight size={14} />
+                      )}
+                    </MagneticButton>
+                  ))}
+                </div>
+              ) : null}
             </motion.div>
           </motion.div>
         ) : null}

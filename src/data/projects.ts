@@ -2,6 +2,44 @@ import type { ProjectItem } from '../types';
 
 export const projects: ProjectItem[] = [
   {
+    id: 'convertx',
+    name: 'ConvertX',
+    tagline: 'Privacy-first mobile file toolkit',
+    problem:
+      'People need to convert, edit, and export images, PDFs, and documents on mobile without uploading files to a backend — privacy and offline use come first.',
+    role: 'Built ConvertX end-to-end with Expo, React Native, and TypeScript — offline-first conversion with on-device processing and no cloud upload path.',
+    outcome:
+      'Privacy-first offline file converter for mobile — convert, edit, and export images, PDFs, and documents entirely on-device with Expo and TypeScript.',
+    details: [
+      'Built ConvertX, a privacy-first Expo React Native app for local image, PDF, and document conversion with no cloud upload path.',
+      'Implemented on-device pipelines: image convert/resize/crop/compress (expo-image-manipulator), PDF structural edits (pdf-lib), camera scanning, and DOCX/PDF export.',
+      'Designed a conversion job runner (validate → process → save) with progress UI, cancel/retry, and Zustand + AsyncStorage persistence.',
+      'Added tools dashboard, history, settings, dark mode UI system, Jest tests, and EAS build profiles; Android Google Pay paywall for Pro entitlements.',
+    ],
+    technologies: [
+      'Expo',
+      'React Native',
+      'TypeScript',
+      'Expo Router',
+      'Zustand',
+      'NativeWind',
+      'expo-image-manipulator',
+      'pdf-lib',
+      'Jest',
+      'EAS',
+      'Google Pay',
+    ],
+    featured: true,
+    accent: '#5eead4',
+    links: [
+      {
+        label: 'Download APK',
+        href: '/apk/convertX.apk',
+        download: 'convertX.apk',
+      },
+    ],
+  },
+  {
     id: 'hobu',
     name: 'Hobu',
     tagline: 'AI-powered property research platform',

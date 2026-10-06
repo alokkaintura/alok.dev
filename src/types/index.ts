@@ -18,6 +18,7 @@ export interface SocialLink {
   label: string;
   href: string;
   external?: boolean;
+  download?: boolean | string;
 }
 
 export interface ContactInfo {
@@ -70,6 +71,8 @@ export interface ProjectItem {
   technologies: string[];
   featured: boolean;
   accent: string;
+  /** App store, GitHub, Expo, or demo URLs shown as buttons in the case study. */
+  links?: SocialLink[];
 }
 
 export interface TechItem {

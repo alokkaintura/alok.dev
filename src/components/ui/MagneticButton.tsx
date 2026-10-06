@@ -8,7 +8,7 @@ interface MagneticButtonProps {
   href?: string;
   onClick?: () => void;
   type?: 'button' | 'submit';
-  download?: boolean;
+  download?: boolean | string;
   external?: boolean;
   variant?: 'primary' | 'ghost' | 'line';
   'aria-label'?: string;
